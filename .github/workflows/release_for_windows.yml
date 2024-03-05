@@ -18,7 +18,7 @@ jobs:
       - run: flutter build windows --release
 
       - name: Package Executable
-        run: 7z a -r -sse ..\..\..\..\build\app\app-release.zip *
+        run: 7z a -r -sse ..\..\..\..\..\build\app\app-release.zip *
         working-directory: build\windows\runner\Release
      
       - name: Release
